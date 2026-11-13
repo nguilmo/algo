@@ -1,5 +1,5 @@
 function formaterDuree(minutes) {
-  let total = minutes / 60;
+  let total = (minutes - (minutes % 60)) / 60 + (minutes % 60) / 100;
   return total;
 }
 
